@@ -1,0 +1,48 @@
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+
+# Environment files
+.env
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data files
+reaction_enzyme_data.csv
+dataset.csv
+train_dataset.csv
+test_dataset.csv
+enzyme_embeddings.pkl
+
+# Logs and debug files
+logs/
+*.log
+
+# Model files
+*.pt
+*.onnx
+checkpoints/
+models/
+
+# Generated files
+outputs/
+intermediate_files/
+
+# Molecular data formats
+*.sdf
+*.mol
+*.pdb
+*.xyz
+
+# Temporary files and system files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/

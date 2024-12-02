@@ -1,0 +1,33 @@
+# HTTP requests
+requests==2.31.0
+
+# CSV and data handling
+pandas==2.0.3
+
+# RDKit for molecular processing
+rdkit==2023.09.1
+
+# Bioinformatics tools
+biopython==1.81
+
+# PyTorch for deep learning
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.1
+
+# Hugging Face Transformers for ESM-2 embeddings
+transformers==4.33.2
+
+# PyTorch Geometric for graph processing
+torch-geometric==2.3.0
+torch-scatter==2.1.1
+torch-sparse==0.6.17
+torch-cluster==1.6.1
+torch-spline-conv==1.2.2
+
+# Miscellaneous
+numpy==1.24.4
+scipy==1.11.2
+
+# For early stopping and model saving (optional, if used)
+joblib==1.3.1
