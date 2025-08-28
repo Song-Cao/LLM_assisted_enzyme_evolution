@@ -330,7 +330,6 @@ if __name__ == '__main__':
     
     ####################################### run stats on fitness trend and calculate fitness curve ######################################
     
-    '''
      # get statistics for the general trend of fitness
     round = 'r2'
     df = pd.read_csv(f'Variant_data_3_rounds_Mid1_{round}.csv')
@@ -470,9 +469,9 @@ if __name__ == '__main__':
         plt.ylabel('Bias coefficient')
         plt.savefig(f'correlation_bt_fitness_sort_{i}_and_bias_{round}.png')
         plt.close()
-    '''
+    
 
-    '''
+    
     # Save top 10 variants based on slope within the LMH group
     # and save top 10 variants based on sort 3 fitness
     df['slope coefficient'] = slope_list
@@ -496,4 +495,4 @@ if __name__ == '__main__':
     with open(f'Top_10_fitness_average_{round}.fasta', 'w') as wf:
         for i in range(10):
             wf.write('>Variant ' + str(i) + '\n' + df_top10_all.loc[i,'aa_seq'] + '\n')
-    '''
+    
