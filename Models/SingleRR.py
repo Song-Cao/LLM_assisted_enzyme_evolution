@@ -1,3 +1,8 @@
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+
 class SingleRR(nn.Module):
     def __init__(self, embedding_dim, dropout_rate=0.1):
         """
