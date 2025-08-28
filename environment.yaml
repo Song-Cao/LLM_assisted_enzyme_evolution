@@ -1,0 +1,75 @@
+name: contrastive_protein
+channels:
+  - conda-forge
+  - pytorch
+  - nodefaults
+
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+  - numpy>=1.24,<2.0
+  - pandas
+  - scipy
+  - cytoolz
+  - loguru
+  - tqdm
+  - omegaconf
+
+  # Jupyter & dev
+  - jupyter
+  - ipykernel
+  - debugpy
+  - pytest
+
+  # Plotting
+  - matplotlib
+  - seaborn
+  - holoviews
+
+  # ML / DS
+  - scikit-learn
+  - statsmodels
+  - shap
+  - xgboost
+
+  # PyTorch & Lightning (Fabric lives here)
+  - pytorch
+  - lightning>=2.2
+
+  # IO
+  - h5py
+  - pyarrow           # from conda to avoid pip source build
+
+  # Bio utils (as seen in your snippets)
+  - biotite
+  - biopython
+
+  # Optional but handy
+  - colorlog
+
+  - pip:
+      # Hydra
+      - hydra-core>=1.3,<1.4
+      - hydra-colorlog
+
+      # Training helpers
+      - lovely-tensors
+      - jaxtyping
+      - einops
+      - torchinfo
+      - wandb
+      - trueskill
+      - python-dotenv
+
+      # Viz extras
+      - logomaker
+      - matplotlib-venn
+
+      # Logging for Lightning TensorBoardLogger
+      - tensorboard
+      - tensorboardX
+
+      # Repo tooling (optional)
+      - commitizen
+      - pymol-remote
