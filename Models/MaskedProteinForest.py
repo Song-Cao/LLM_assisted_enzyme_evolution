@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
 class MaskedProteinForest(nn.Module):
     def __init__(self, L, D, hidden_dim=64, k=16, temp=1.0): # Increased temp
         super().__init__()
