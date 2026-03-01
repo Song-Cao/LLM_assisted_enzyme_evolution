@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
 class EpiNN_aaindex(nn.Module):
     def __init__(self, L, D, dropout_rate=0.0):
         super().__init__()
